@@ -1,0 +1,28 @@
+ul {
+  list-style-type: none;
+}
+h1 {
+  padding-top: 0em;
+}
+.img-size {
+  width: 334px;
+  height: 178px;
+}
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-location {
+  text-align: center;
+  background-color: #cfd8dc;
+  padding-bottom: 0.1em;
+  padding-top: 0.1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.section-explore {
+  background-color: #eceff1;
+  text-align: center;
+  margin-top: 0em;
+}
