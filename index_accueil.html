@@ -15,7 +15,7 @@
   <body>
     <header>
       <img
-        class="img-center header-img__size"
+        class="header-img__size"
         src="images/logo/ohmyfood.png"
         alt="logo ohmyfood"
       />
@@ -37,68 +37,97 @@
         Découvrez des restaurants d'exception,<br />
         séléctionnés par nos soins.
       </p>
-      <button class="btn">Explorer nos restaurants</button>
+      <button class="btn">
+        <a class="link-white" href="#ancre"> Explorer nos restaurants</a>
+      </button>
     </section>
     <section class="">
       <h2>Fonctionnement</h2>
-      <ul class="">
+      <ul class="section-fonctionnement-ul">
         <li class="btn-operation block-backgroundcolor">
-          <span class="number">1</span>
-          <i class="fas fa-mobile-alt padding"></i> Choisissez un restaurants
+          <div class="btn-operation-texte">
+            <span class="number positionnumberone">1</span>
+            <i class="fas fa-mobile-alt section-fonctionnement-ul-li-icon"></i
+            >Choisissez un restaurants
+          </div>
         </li>
         <li class="btn-operation block-backgroundcolor">
-          2 <i class="fas fa-list-ul"></i> Composez votre menu
+          <div class="btn-operation-texte">
+            <span class="number positionnumbertwo">2</span>
+            <i class="fas fa-list-ul section-fonctionnement-ul-li-icon"></i
+            >Composez votre menu
+          </div>
         </li>
-        <li class="btn-operation block-backgroundcolor">
-          3 <i class="fas fa-store"></i> Dégustez au restaurants
+        <li
+          class="btn-operation block-backgroundcolor btn-operation__marginbottom"
+        >
+          <div class="btn-operation-texte">
+            <span class="number positionnumberthree">3</span>
+            <i class="fas fa-store section-fonctionnement-ul-li-icon"></i>
+            Dégustez au restaurants
+          </div>
         </li>
       </ul>
     </section>
-    <section class="block-backgroundcolor">
+    <section class="block-backgroundcolor section-restaurants" id="ancre">
       <h2>Restaurants</h2>
       <figure>
-        <img
-          class="img-size img-center"
-          src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-          alt="photo d'un plat du restaurant La palette du goût"
-        />
-        <figcaption>
-          La palette du goût <i class="far fa-heart"></i> <br />
-          Ménilmontant
-        </figcaption>
+        <a class="link-black" href="index_menu_La_palette_du_goût.html">
+          <div class="block-new block-new__positionone">Nouveau</div>
+          <img
+            class="img-restaurants"
+            src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="photo d'un plat du restaurant La palette du goût"
+          />
+          <figcaption>
+            <span class="bold"> La palette du goût</span>
+            <i class="far fa-heart"></i> <br />
+            Ménilmontant
+          </figcaption>
+        </a>
       </figure>
       <figure>
-        <img
-          class="img-size img-center"
-          src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-          alt="photo d'un plat du restaurant La note enchantée"
-        />
-        <figcaption>
-          La note enchantée <i class="far fa-heart"></i> <br />
-          Charonne
-        </figcaption>
+        <a class="link-black" href="index_menu_La_note_enchantée.html">
+          <div class="block-new block-new__positiontwo">Nouveau</div>
+          <img
+            class="img-restaurants"
+            src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+            alt="photo d'un plat du restaurant La note enchantée"
+          />
+          <figcaption>
+            <span class="bold">La note enchantée</span>
+            <i class="far fa-heart"></i> <br />
+            Charonne
+          </figcaption>
+        </a>
       </figure>
       <figure>
-        <img
-          class="img-size img-center"
-          src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-          alt="photo d'un plat du restaurant À la française"
-        />
-        <figcaption>
-          À la française <i class="far fa-heart"></i> <br />
-          Cité Rouge
-        </figcaption>
+        <a class="link-black" href="index_menu_à_la_française.html">
+          <img
+            class="img-restaurants"
+            src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            alt="photo d'un plat du restaurant À la française"
+          />
+          <figcaption>
+            <span class="bold">À la française</span>
+            <i class="far fa-heart"></i> <br />
+            Cité Rouge
+          </figcaption>
+        </a>
       </figure>
-      <figure>
-        <img
-          class="img-size img-center"
-          src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-          alt="photo d'un plat du restaurant Le délice des sens"
-        />
-        <figcaption>
-          Le délice des sens <i class="far fa-heart"></i> <br />
-          Folie-Méricourt
-        </figcaption>
+      <figure class="figure__marginbottomend">
+        <a class="link-black" href="index_menu_Le_délice_des_sens.html">
+          <img
+            class="img-restaurants"
+            src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            alt="photo d'un plat du restaurant Le délice des sens"
+          />
+          <figcaption>
+            <span class="bold">Le délice des sens</span>
+            <i class="far fa-heart"></i> <br />
+            Folie-Méricourt
+          </figcaption>
+        </a>
       </figure>
     </section>
     <footer>
@@ -150,7 +179,9 @@
           <i class="fas fa-hands-helping"></i> Devenir partenaire
         </li>
         <li class="footer-li">Mention légales</li>
-        <li class="footer-li"><a class="link" href="mailto:">Contact</a></li>
+        <li class="footer-li">
+          <a class="link-white" href="mailto:">Contact</a>
+        </li>
       </ul>
     </footer>
   </body>
