@@ -10,6 +10,23 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/shrikhand-v6-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Shrikhand Regular"), local("Shrikhand-Regular"),
+    url("../fonts/shrikhand-v6-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/shrikhand-v6-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/shrikhand-v6-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/shrikhand-v6-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg"); /* Legacy iOS */
+}
 body {
   font-family: "robotoregular", sans-serif;
   margin: 0;
@@ -70,7 +87,7 @@ svg {
   font-weight: bold;
   border-radius: 25px;
   margin-bottom: 3em;
-  box-shadow: 0px 5px 10px #ededed;
+  box-shadow: 0px 5px 10px #808080;
   border: 0px;
 }
 footer {
@@ -85,6 +102,9 @@ footer {
   color: #7e7e7e;
   font-size: 1.3em;
 }
+.section-fonctionnement-ul-li-icon:hover {
+  color: #9356dc;
+}
 .section-fonctionnement-ul {
   padding-left: 0;
 }
@@ -93,21 +113,25 @@ footer {
   width: 20em;
   height: 5em;
   border-radius: 25px;
-  box-shadow: 0px 5px 10px gray;
+  box-shadow: 0px 5px 10px #808080;
   margin-bottom: 1.25em;
   margin-left: auto;
   margin-right: auto;
 }
+.btn-operation:hover {
+  background-color: #f5edff;
+  box-shadow: 0px 5px 10px #000000;
+}
 .btn-operation__marginbottom {
   margin-bottom: 4em;
 }
-/*.btn-operation__color{
-  onmouseover="this.className='classeon'" onmouseout="this.className='classeoff
-}*/
 .btn-operation-texte {
   padding-left: 2em;
   padding-top: 1.7em;
   font-weight: bold;
+}
+.section-restaurants {
+  height: 73em;
 }
 .number {
   color: #fafafa;
@@ -138,8 +162,6 @@ footer {
   text-decoration: none;
   color: #000000;
 }
-.section-restaurants {
-}
 figure {
   border-radius: 15px;
   background-color: #ffffff;
@@ -151,6 +173,9 @@ figure {
   border-radius: 14px 14px 0 0;
   width: 100%;
   height: 10.87em;
+}
+.img-restaurants__menu {
+  width: 100%;
 }
 .block-new {
   background-color: #99e2d0;
@@ -182,6 +207,15 @@ figcaption {
 .bold {
   font-weight: bold;
 }
+.icon-heart {
+  position: absolute;
+  right: 2.9em;
+  font-size: 1.5em;
+}
+.icon-heart:hover {
+  color: #9356dc;
+}
+
 .footer-ul {
   margin-top: 0.5em;
   margin-bottom: 0;
@@ -190,4 +224,16 @@ figcaption {
 }
 .footer-li {
   padding-top: 0.4em;
+}
+
+.menu {
+  border-radius: 50px 50px 0 0;
+  position: sticky;
+  top: em;
+}
+.footer-menu {
+  position: ;
+}
+.font-h1 {
+  font-family: "Shrikhand", sans-serif;
 }
