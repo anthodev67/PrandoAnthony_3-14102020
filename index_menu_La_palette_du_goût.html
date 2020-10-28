@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
     <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/0141e58409.js"
       crossorigin="anonymous"
@@ -12,6 +13,9 @@
   </head>
   <body>
     <header>
+      <a href="index.html"
+        ><i class="fas fa-arrow-left arrow font-color"></i
+      ></a>
       <img
         class="header-img__size"
         src="images/logo/ohmyfood.png"
@@ -26,58 +30,105 @@
       />
     </section>
     <section class="menu block-backgroundcolor">
-      <h1 class="font-h1">La palette du goût<i class="far fa-heart"></i></h1>
+      <h1 class="font-h1">
+        La palette du goût<i class="far fa-heart heart-menu"></i>
+      </h1>
       <section>
-        <h2>Entrées</h2>
+        <h2 class="h2-menu font-color">Entrées</h2>
+        <div class="underline"></div>
         <ul>
-          <li>
-            Fricassée d'escargot <br />
-            Au piment d'Espelette 25€
+          <li class="btn-operation btn-operation__width-menu">
+            <div class="texte-menu">
+              <span class="bold font-size__texte-menu"
+                >Fricassée d'escargot</span
+              >
+              <br />
+              Au piment d'Espelette <span class="price bold">25€</span>
+            </div>
           </li>
-          <li>
-            Foie gras de canard mi-cuit <br />
-            Et ses copeaux de truffe noire 35€
+          <li class="btn-operation btn-operation__width-menu">
+            <div class="texte-menu">
+              <span class="bold font-size__texte-menu"
+                >Foie gras de canard mi-cuit</span
+              ><br />
+              Et ses copeaux de truffe noire <span class="price bold">35€</span>
+            </div>
           </li>
-          <li>
-            Oeuf au plat <br />
-            Assaisonné à la truffe sur lit de caviar 20€
+          <li class="btn-operation btn-operation__width-menu">
+            <div class="texte-menu">
+              <span class="bold font-size__texte-menu">Oeuf au plat </span
+              ><br />
+              Assaisonné à la truffe sur lit de caviar
+              <span class="price bold">20€</span>
+            </div>
           </li>
         </ul>
       </section>
       <section>
-        <h2>Plats</h2>
+        <h2 class="h2-menu font-color">Plats</h2>
+        <div class="underline"></div>
         <ul>
-          <li>
-            Filet de boeuf aux herbes <br />
-            Accompagné de sa ribambelle de légumes 40€
+          <li
+            class="btn-operation btn-operation__width-menu btn-operation__height-menu"
+          >
+            <div class="texte-menu">
+              <span class="bold font-size__texte-menu"
+                >Filet de boeuf aux herbes</span
+              ><br />
+              Accompagné de sa ribambelle de <br />
+              légumes
+              <span class="price bold">40€</span>
+            </div>
           </li>
-          <li>
-            Parmentier de queue de boeuf <br />
-            À la truffe noire sur sa purée de panais 35€
+          <li class="btn-operation btn-operation__width-menu">
+            <div class="texte-menu">
+              <span class="bold font-size__texte-menu"
+                >Parmentier de queue de boeuf</span
+              ><br />
+              À la truffe noire sur sa purée de panais
+              <span class="price bold">35€</span>
+            </div>
           </li>
-          <li>
-            Filet de turbot <br />
-            Aux agrumes 44€
+          <li class="btn-operation btn-operation__width-menu">
+            <div class="texte-menu">
+              <span class="bold font-size__texte-menu">Filet de Turbot</span
+              ><br />
+              Aux agrumes <span class="price bold">44€</span>
+            </div>
           </li>
         </ul>
       </section>
       <section>
-        <h2>Desserts</h2>
-        <ul>
-          <li>
-            Paris-Brest <br />
-            Revisité 18€
+        <h2 class="h2-menu font-color">Desserts</h2>
+        <div class="underline"></div>
+        <ul class="ul-desserts">
+          <li class="btn-operation btn-operation__width-menu">
+            <div class="texte-menu">
+              <span class="bold font-size__texte-menu">Paris-Brest</span><br />
+              Revisité <span class="price bold">18€</span>
+            </div>
           </li>
-          <li>
-            Macaron au chocolat d'exception <br />
-            Et glace à la vanille de Madagascar 22€
+          <li class="btn-operation btn-operation__width-menu">
+            <div class="texte-menu">
+              <span class="bold font-size__texte-menu"
+                >Macaron au chocolat d'exception</span
+              ><br />
+              Et glace à la vanille de Madagascar
+              <span class="price bold">22€</span>
+            </div>
           </li>
-          <li>
-            Mousse au chocolat <br />
-            Au piment d'Espelette et à la truffe noire 23€
+          <li class="btn-operation btn-operation__width-menu">
+            <div class="texte-menu">
+              <span class="bold font-size__texte-menu">Mousse au chocolat </span
+              ><br />
+              Au piment d'Espelette et à la truffe noire
+              <span class="price bold">23€</span>
+            </div>
           </li>
         </ul>
-        <button>Commander</button>
+        <button class="btn btn-order">
+          <span class="btn-order__font-size"> Commander</span>
+        </button>
       </section>
     </section>
     <footer class="footer-menu">
