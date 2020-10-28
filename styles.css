@@ -14,14 +14,14 @@
   font-family: "Shrikhand";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/shrikhand-v6-latin-regular.eot");
+  src: url("fonts/shrikhand-v6-latin-regular.eot");
   src: local("Shrikhand Regular"), local("Shrikhand-Regular"),
-    s url("../fonts/shrikhand-v6-latin-regular.eot?#iefix")
+    url("fonts/shrikhand-v6-latin-regular.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/shrikhand-v6-latin-regular.woff2") format("woff2"),
-    url("../fonts/shrikhand-v6-latin-regular.woff") format("woff"),
-    url("../fonts/shrikhand-v6-latin-regular.ttf") format("truetype"),
-    url("../fonts/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
+    url("fonts/shrikhand-v6-latin-regular.woff2") format("woff2"),
+    url("fonts/shrikhand-v6-latin-regular.woff") format("woff"),
+    url("fonts/shrikhand-v6-latin-regular.ttf") format("truetype"),
+    url("fonts/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
 }
 body {
   font-family: "robotoregular", sans-serif;
@@ -30,8 +30,9 @@ body {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
-h1 {
+.h1-index {
   margin-top: 0em;
   text-align: center;
   padding-top: 2em;
@@ -73,18 +74,28 @@ svg {
   margin-top: 0em;
 }
 .font-color {
-  color: #353535;
+  color: #4b4b4b;
 }
 .btn {
   background: linear-gradient(#ff79da, #9356dc);
   color: #fafafa;
-  height: 3em;
-  width: 15em;
+
   font-weight: bold;
   border-radius: 25px;
   margin-bottom: 3em;
   box-shadow: 0px 5px 10px #808080;
   border: 0px;
+  height: 3.8em;
+  width: 15em;
+}
+.btn-order {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+}
+.btn-order__font-size {
+  font-size: 1.2em;
 }
 footer {
   background-color: #353535;
@@ -106,7 +117,6 @@ footer {
 }
 .btn-operation {
   border: 0;
-  width: 20em;
   height: 5em;
   border-radius: 25px;
   box-shadow: 0px 5px 10px #808080;
@@ -115,6 +125,7 @@ footer {
   margin-right: auto;
   position: relative;
 }
+
 .btn-operation:hover {
   background-color: #f5edff;
   box-shadow: 0px 5px 10px #000000;
@@ -122,13 +133,23 @@ footer {
 .btn-operation__marginbottom {
   margin-bottom: 4em;
 }
+.btn-operation__width {
+  width: 20em;
+}
+.btn-operation__width-menu {
+  width: 24em;
+  position: relative;
+}
+.btn-operation__height-menu {
+  height: 6em;
+}
 .btn-operation-texte {
   padding-left: 2em;
   padding-top: 1.7em;
   font-weight: bold;
 }
 .section-restaurants {
-  height: 73em;
+  height: 78em;
 }
 .number {
   color: #fafafa;
@@ -160,7 +181,9 @@ figure {
   margin-right: auto;
   border-radius: 14px 14px 0 0;
   width: 100%;
-  height: 10.87em;
+  height: 12em;
+  object-fit: cover;
+  object-position: 0 60%;
 }
 .img-restaurants__menu {
   width: 100%;
@@ -193,9 +216,12 @@ figcaption {
 .bold {
   font-weight: bold;
 }
+figcaption {
+  position: relative;
+}
 .icon-heart {
   position: absolute;
-  right: 2.9em;
+  right: 1.5em;
   font-size: 1.5em;
 }
 .icon-heart:hover {
@@ -214,8 +240,10 @@ figcaption {
 
 .menu {
   border-radius: 50px 50px 0 0;
-  position: ;
-  top: em;
+  width: 100%;
+  position: absolute;
+  top: 17em;
+  z-index: 2;
 }
 .arrow {
   position: absolute;
@@ -225,4 +253,50 @@ figcaption {
 }
 .font-h1 {
   font-family: "Shrikhand", sans-serif;
+  font-size: 1.8em;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+.img-restaurants__menu {
+  position: relative;
+  z-index: 1;
+}
+.section-dessert {
+  position: relative;
+}
+.footer-menu {
+  position: absolute;
+  width: 100%;
+  top: 106.2em;
+  z-index: 3;
+}
+.heart-menu {
+  padding-left: 1.5em;
+}
+.h2-menu {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding-bottom: 0.2em;
+}
+.underline {
+  border-top: solid 4px;
+  width: 4em;
+  color: #99e2d0;
+  margin-left: 1.5em;
+}
+.ul-desserts {
+  margin-bottom: 3.12em;
+}
+.price {
+  position: absolute;
+  top: 2.45em;
+  right: 2em;
+}
+.texte-menu {
+  padding-top: 0.8em;
+  padding-left: 0.8em;
+}
+.font-size__texte-menu {
+  font-size: 1.23em;
 }
