@@ -266,7 +266,7 @@ figcaption {
   position: relative;
   z-index: 1;
 }
-.img-restaurants__lanoteenchantée {
+.img-restaurants__lanoteenchantee {
   object-position: 0 -125px;
 }
 .section-dessert {
@@ -278,13 +278,13 @@ figcaption {
   /*top: 106.2em;*/
   z-index: 3;
 }
-.footer-menu__lanoteenchantée {
+.footer-menu__lanoteenchantee {
   top: 112em;
 }
 .footer-menu__lapalettedugout {
   top: 105.5em;
 }
-.footer-menu__àlafrancaise {
+.footer-menu__alafrancaise {
   top: 104.5em;
 }
 .heart-menu {
