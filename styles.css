@@ -72,6 +72,7 @@ svg {
 .section-explore {
   text-align: center;
   margin-top: 0em;
+  height: 21em;
 }
 .font-color {
   color: #4b4b4b;
@@ -79,14 +80,18 @@ svg {
 .btn {
   background: linear-gradient(#ff79da, #9356dc);
   color: #fafafa;
-
   font-weight: bold;
-  border-radius: 25px;
-  margin-bottom: 3em;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 5px 10px #808080;
   border: 0px;
+  margin-top: 2em;
+  display: block;
   height: 3.8em;
   width: 15em;
+  vertical-align: middle;
+  line-height: 3.8em;
 }
 .btn-order {
   display: block;
@@ -242,7 +247,7 @@ figcaption {
   border-radius: 50px 50px 0 0;
   width: 100%;
   position: absolute;
-  top: 17em;
+  top: 17.5em;
   z-index: 2;
 }
 .arrow {
@@ -251,15 +256,18 @@ figcaption {
   left: 1em;
   font-size: 1.4em;
 }
-.font-h1 {
+.h1-menu {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.8em;
   padding-left: 1em;
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 .img-restaurants__menu {
   position: relative;
   z-index: 1;
+}
+.img-restaurants__lanoteenchantée {
+  object-position: 0 -125px;
 }
 .section-dessert {
   position: relative;
@@ -267,11 +275,22 @@ figcaption {
 .footer-menu {
   position: absolute;
   width: 100%;
-  top: 106.2em;
+  /*top: 106.2em;*/
   z-index: 3;
 }
+.footer-menu__lanoteenchantée {
+  top: 112em;
+}
+.footer-menu__lapalettedugout {
+  top: 105.5em;
+}
+.footer-menu__àlafrancaise {
+  top: 104.5em;
+}
 .heart-menu {
-  padding-left: 1.5em;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
 }
 .h2-menu {
   text-transform: uppercase;
