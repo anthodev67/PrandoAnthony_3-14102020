@@ -277,7 +277,6 @@ figcaption {
 .footer-menu {
   position: absolute;
   width: 100%;
-  /*top: 106.2em;*/
   z-index: 3;
 }
 .footer-menu__lanoteenchantee {
@@ -320,4 +319,55 @@ figcaption {
 }
 .font-size__texte-menu {
   font-size: 1.23em;
+}
+/*affichage desktop*/
+@media screen and (min-width: 1000px) {
+  .section-location,
+  h2,
+  .section-restaurants {
+    text-align: center;
+  }
+  .section-location__paddingleft {
+    padding-left: 0;
+  }
+  .section-fonctionnement-ul {
+    display: flex;
+  }
+  .section-restaurants {
+    height: 45em;
+  }
+  .block-figure {
+    display: inline-block;
+    width: 45%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  h2 {
+    padding-left: 0;
+  }
+  .footer-ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .footer-li {
+    margin-left: 5em;
+    margin-right: 5em;
+    font-size: 1.2em;
+  }
+  svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 1em;
+    width: 15em;
+  }
+  .header-img__size {
+    width: 20em;
+  }
+  .number {
+    left: 150px;
+    top: -12px;
+  }
 }
