@@ -176,10 +176,7 @@ footer {
   text-decoration: none;
   color: #000000;
 }
-figure {
-  border-radius: 15px;
-  background-color: #ffffff;
-}
+
 .img-restaurants {
   display: block;
   margin-left: auto;
@@ -195,6 +192,11 @@ figure {
 }
 .block-figure {
   position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
 .block-new {
   background-color: #99e2d0;
