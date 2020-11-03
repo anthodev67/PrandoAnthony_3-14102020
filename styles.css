@@ -46,7 +46,8 @@ svg {
   margin-top: 1.5em;
   margin-left: 2em;
 }
-.block-backgroundcolor {
+.block-backgroundcolor,
+.menu {
   background-color: #f6f6f6;
 }
 .header-img__size {
@@ -129,6 +130,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  background-color: #ffffff;
 }
 
 .btn-operation:hover {
@@ -154,7 +156,7 @@ footer {
   font-weight: bold;
 }
 .section-restaurants {
-  height: 78em;
+  padding-bottom: 2em;
 }
 .number {
   color: #fafafa;
@@ -187,9 +189,6 @@ footer {
   object-fit: cover;
   object-position: 0 60%;
 }
-.img-restaurants__menu {
-  width: 100%;
-}
 .block-figure {
   position: relative;
   width: 90%;
@@ -216,9 +215,6 @@ figcaption {
   padding-left: 0.8em;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
-}
-.figure__marginbottomend {
-  margin-bottom: 3.8em;
 }
 .bold {
   font-weight: bold;
@@ -267,6 +263,7 @@ figcaption {
 .img-restaurants__menu {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 .img-restaurants__lanoteenchantee {
   object-position: 0 -125px;
@@ -300,10 +297,7 @@ figcaption {
   padding-bottom: 0.2em;
 }
 .underline {
-  border-top: solid 4px;
-  width: 4em;
-  color: #99e2d0;
-  margin-left: 1.5em;
+  border-bottom: solid 4px #99e2d0;
 }
 .ul-desserts {
   margin-bottom: 3.12em;
@@ -321,20 +315,9 @@ figcaption {
   font-size: 1.23em;
 }
 /*affichage desktop*/
-@media screen and (min-width: 1000px) {
-  .section-location,
-  h2,
-  .section-restaurants {
-    text-align: center;
-  }
-  .section-location__paddingleft {
-    padding-left: 0;
-  }
+@media screen and (min-width: 900px) {
   .section-fonctionnement-ul {
     display: flex;
-  }
-  .section-restaurants {
-    height: 45em;
   }
   .block-figure {
     display: inline-block;
@@ -342,18 +325,63 @@ figcaption {
     margin-left: 1em;
     margin-right: 1em;
   }
-  h2 {
-    padding-left: 0;
+  .header-img__size {
+    width: 20em;
+  }
+  .number {
+    left: 150px;
+    top: -12px;
+  }
+  .btn-operation__width-menu {
+    width: 60%;
+  }
+  .footer-menu__lapalettedugout {
+    top: 110em;
+  }
+  .footer-menu__lanoteenchantee {
+    top: 116em;
+  }
+  /*
+  .img-restaurants__menu {
+    height: 30em;
+    object-fit: cover;
+    object-position: 0 -100px;
+  }
+  .img-restaurants-object-position__alafrancaise {
+    object-position: 0 -170px;
+  }
+  .img-restaurants-object-position__ledelicedessens {
+    object-position: 0 -200px;
+  }
+  .img-restaurants-object-position__lanoteenchantee {
+    object-position: 0 -400px;
+  }
+  .menu {
+    top: 30em;
+  }*/
+}
+
+@media screen and (min-width: 600px) {
+  .section-location,
+  .section-restaurants,
+  h2,
+  h1 {
+    text-align: center;
   }
   .footer-ul {
     display: flex;
     justify-content: center;
     padding-left: 0;
   }
+  h2,
+  .section-location__paddingleft {
+    padding-left: 0;
+  }
   .footer-li {
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     font-size: 1.2em;
+    text-align: center;
   }
   svg {
     display: block;
@@ -366,8 +394,33 @@ figcaption {
   .header-img__size {
     width: 20em;
   }
-  .number {
-    left: 150px;
-    top: -12px;
+  .btn-operation__width-menu {
+    width: 50%;
+  }
+  .img-restaurants__menu {
+    height: 20em;
+    object-fit: cover;
+    object-position: 0 -100px;
+  }
+  .img-restaurants-object-position__alafrancaise {
+    object-position: 0 -170px;
+  }
+  .img-restaurants-object-position__ledelicedessens {
+    object-position: 0 -200px;
+  }
+  .img-restaurants-object-position__lanoteenchantee {
+    object-position: 0 -400px;
+  }
+  .menu {
+    top: 22em;
+  }
+  .footer-menu__lanoteenchantee {
+    top: 115em;
+  }
+  .footer-menu__lapalettedugout {
+    top: 110em;
+  }
+  .footer-menu__alafrancaise {
+    top: 109em;
   }
 }
