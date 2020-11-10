@@ -319,6 +319,10 @@ figcaption {
   -webkit-background-clip: text;
   color: transparent;
 }
+.heart-full-menu {
+  top: 1.5em;
+  right: -992px;
+}
 .heart-full:hover {
   opacity: 1;
   transition: opacity 1s;
