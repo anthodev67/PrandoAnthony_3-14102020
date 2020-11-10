@@ -12,6 +12,10 @@
     ></script>
   </head>
   <body>
+    <section class="section-loader">
+      <span class="loader loader-quart"></span>
+      Chargement
+    </section>
     <header>
       <img
         class="header-img__size"
@@ -78,9 +82,11 @@
         /></a>
         <figcaption>
           <span class="bold"> La palette du goût</span>
-          <span class="icon-heart"><i class="far fa-heart"></i></span>
-          <br />
-          Ménilmontant
+          <span class="icon-heart">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart heart-full"></i>
+          </span>
+          <div>Ménilmontant</div>
         </figcaption>
       </figure>
       <figure class="block-figure">
@@ -94,9 +100,11 @@
         </a>
         <figcaption>
           <span class="bold">La note enchantée</span>
-          <span class="icon-heart"><i class="far fa-heart"></i></span>
-          <br />
-          Charonne
+          <span class="icon-heart">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart heart-full"></i>
+          </span>
+          <div>Charonne</div>
         </figcaption>
       </figure>
       <figure class="block-figure">
@@ -109,9 +117,11 @@
         </a>
         <figcaption>
           <span class="bold">À la française</span>
-          <span class="icon-heart"><i class="far fa-heart"></i></span>
-          <br />
-          Cité Rouge
+          <span class="icon-heart">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart heart-full"></i>
+          </span>
+          <div>Cité Rouge</div>
         </figcaption>
       </figure>
       <figure class="block-figure">
@@ -124,9 +134,11 @@
         </a>
         <figcaption>
           <span class="bold">Le délice des sens</span>
-          <span class="icon-heart"><i class="far fa-heart"></i></span>
-          <br />
-          Folie-Méricourt
+          <span class="icon-heart">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart heart-full"></i>
+          </span>
+          <div>Folie-Méricourt</div>
         </figcaption>
       </figure>
     </section>
@@ -184,5 +196,14 @@
         </li>
       </ul>
     </footer>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".section-loader").fadeOut(5000);
+      });
+    </script>
   </body>
 </html>
