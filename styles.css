@@ -41,10 +41,13 @@
 }
 
 @keyframes fade-in {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  50% {
+    opacity: 0%;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -236,10 +239,43 @@ li:nth-of-type(4) {
 .btn-menu {
   width: 95%;
   position: relative;
-  animation: fade-in 4s linear;
-  -webkit-animation: ;
+  animation: fade-in 1s linear;
+  -webkit-animation: fade-in 1s linear;
   opacity: 0;
   animation-fill-mode: forwards;
+  display: flex;
+}
+.btn-menu-check {
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  opacity: 1;
+  display: flex;
+}
+.btn-menu-check:hover {
+  opacity: 1;
+  transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+}
+.check {
+  background-color: #99e2d0;
+  color: #ffffff;
+  width: 80px;
+  border-radius: 0 25px 25px 0;
+  -moz-border-radius: 0 25px 25px 0;
+  -ms-border-radius: 0 25px 25px 0;
+  -o-border-radius: 0 25px 25px 0;
+  -webkit-border-radius: 0 25px 25px 0;
+  font-size: 1.8em;
+  text-align: center;
+  line-height: 80px;
+  opacity: 1;
+}
+.position-ul{
+  position: relative;
 }
 .btn-operation__height-menu {
   height: 6em;
@@ -419,9 +455,13 @@ figcaption {
   top: 2.45em;
   right: 2em;
 }
+.price-check {
+  right: 6.5em;
+}
 .texte-menu {
   padding-top: 0.8em;
   padding-left: 0.8em;
+  width: 301px;
 }
 .font-size__texte-menu {
   font-size: 1.23em;
@@ -445,9 +485,13 @@ figcaption {
     left: 150px;
     top: -12px;
   }
-  .btn-menu {
+  .btn-menu{
     width: 60%;
   }
+  .btn-menu-check {
+  left: 320px;
+}
+
   .footer-menu__lapalettedugout {
     top: 110em;
   }
@@ -455,7 +499,7 @@ figcaption {
     top: 116em;
   }
 }
-
+/*affichage tablette*/
 @media screen and (min-width: 600px) {
   .section-location,
   .section-restaurants,
@@ -489,8 +533,10 @@ figcaption {
   .header-img__size {
     width: 20em;
   }
-  .btn-menu {
+  .btn-menu,
+  .btn-menu-check {
     width: 50%;
+  }
   }
   .img-restaurants__menu {
     height: 20em;
