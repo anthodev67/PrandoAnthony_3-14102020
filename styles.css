@@ -26,17 +26,9 @@
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
   }
 }
 
@@ -45,7 +37,7 @@
     opacity: 0;
   }
   50% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -64,20 +56,22 @@
     z-index: -10;
   }
 }
-@keyframes icone-rotate {
+@keyframes icon-rotate {
   0% {
     transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+  }
+}
+@keyframes animCheck {
+  0% {
+    transform: translateX(100px);
+  
+
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 .section-loader {
@@ -93,7 +87,6 @@
   opacity: 1;
   padding-top: 9em;
   animation: fade-out 2s;
-  -webkit-animation: fade-out 2s;
   animation-fill-mode: forwards;
   z-index: 10;
 }
@@ -108,10 +101,6 @@
 .loader-quart {
   border-radius: 50px;
   border: 6px solid rgba(255, 255, 255, 0.4);
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
 }
 .loader-quart:after {
   content: "";
@@ -124,7 +113,6 @@
   border: 6px solid transparent;
   border-top-color: #fff;
   animation: spin 0.9s linear 0s infinite;
-  -webkit-animation: spin 0.9s linear 0s infinite;
 }
 body {
   font-family: "robotoregular", sans-serif;
@@ -144,6 +132,11 @@ h2 {
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 0.5em;
+}
+h3 {
+    padding-top: 0.8em;
+    padding-left: 0.8em;
+    margin: 0;
 }
 svg {
   margin-top: 1.5em;
@@ -255,51 +248,29 @@ li:nth-of-type(4) {
 }
 .btn-menu {
   width: 95%;
-  position: relative;
-  animation: fade-in 1s linear;
-  -webkit-animation: fade-in 1s linear;
-  opacity: 0;
+  display: flex;
+  overflow: hidden;
+}
+.btn-menu:hover .div__check, .btn-menu:hover .price {
+  animation: animCheck 1s;
   animation-fill-mode: forwards;
-  display: flex;
 }
-.positionun {
-  top: 0px;
+
+.btn-menu:hover .icon-check {
+  animation: icon-rotate 1s;
 }
-.positiondeux {
-  top: 100px;
+.btn-menu:hover .check {
+  animation: animCheck 1s;
+  animation-fill-mode: forwards;
 }
-.positiontrois {
-  top: 200px;
-}
-.btn-menu-check {
-  width: 95%;
-  position: absolute;
-  left: 2.5%;
-  opacity: 0;
-  display: flex;
-}
-.btn-menu-check:hover {
-  opacity: 1;
-  transition: 1s;
-}
-.btn-menu-check:hover .icon-check {
-  animation: icone-rotate 1s;
-  -webkit-animation: icone-rotate 1s;
-}
-.check {
+.div__check {
   background-color: #99e2d0;
   color: #ffffff;
   width: 80px;
   border-radius: 0 25px 25px 0;
-  -moz-border-radius: 0 25px 25px 0;
-  -ms-border-radius: 0 25px 25px 0;
-  -o-border-radius: 0 25px 25px 0;
-  -webkit-border-radius: 0 25px 25px 0;
   font-size: 1.8em;
   text-align: center;
   line-height: 80px;
-  position: absolute;
-  right: 0;
 }
 .position-ul {
   position: relative;
@@ -400,10 +371,6 @@ figcaption {
 .heart-full:hover {
   opacity: 1;
   transition: opacity 1s;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -ms-transition: opacity 1s;
-  -o-transition: opacity 1s;
 }
 .footer-ul {
   margin-top: 0.5em;
@@ -478,12 +445,8 @@ figcaption {
   margin-bottom: 3.12em;
 }
 .price {
-  position: absolute;
-  top: 2.45em;
-  right: 2em;
-}
-.price-check {
-  right: 6.5em;
+padding-left: 17.7em;
+padding-right: 1em;
 }
 .texte-menu {
   padding-top: 0.8em;
@@ -492,6 +455,15 @@ figcaption {
 }
 .font-size__texte-menu {
   font-size: 1.23em;
+}
+.div__texte-menu{
+  display: flex;
+}
+.p-menu {
+  margin: 0;
+  padding-left: 0.8em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /*affichage desktop*/
