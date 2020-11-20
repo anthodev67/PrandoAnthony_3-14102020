@@ -36,9 +36,6 @@
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
@@ -62,16 +59,6 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@keyframes animCheck {
-  0% {
-    transform: translateX(100px);
-  
-
-  }
-  100% {
-    transform: translateX(0px);
   }
 }
 .section-loader {
@@ -134,9 +121,9 @@ h2 {
   padding-bottom: 0.5em;
 }
 h3 {
-    padding-top: 0.8em;
-    padding-left: 0.8em;
-    margin: 0;
+  padding-top: 0.8em;
+  padding-left: 0.8em;
+  margin: 0;
 }
 svg {
   margin-top: 1.5em;
@@ -190,7 +177,7 @@ svg {
   line-height: 3.8em;
 }
 .btn:hover {
-  background: linear-gradient(#fa92dd, #a171db);
+  opacity: 0.8;
   box-shadow: 0px 5px 10px #000000;
 }
 .btn-order {
@@ -250,27 +237,40 @@ li:nth-of-type(4) {
   width: 95%;
   display: flex;
   overflow: hidden;
+  opacity: 0;
+  animation: fade-in 1s forwards;
 }
-.btn-menu:hover .div__check, .btn-menu:hover .price {
-  animation: animCheck 1s;
-  animation-fill-mode: forwards;
+.btn-menu:hover .div__check,
+.btn-menu:hover .price {
+  transform: translateX(-80px);
 }
 
 .btn-menu:hover .icon-check {
   animation: icon-rotate 1s;
 }
-.btn-menu:hover .check {
-  animation: animCheck 1s;
-  animation-fill-mode: forwards;
+.price {
+  padding-left: 12.2em;
+  padding-right: 1em;
+  transition: all 1s;
+  position: absolute;
+  right: 0;
 }
 .div__check {
   background-color: #99e2d0;
   color: #ffffff;
   width: 80px;
+  height: 100%;
   border-radius: 0 25px 25px 0;
   font-size: 1.8em;
   text-align: center;
   line-height: 80px;
+  flex: 0 0 auto;
+  transition: all 1s;
+  position: absolute;
+  right: -80px;
+}
+.div__check-line-height {
+  line-height: 96px;
 }
 .position-ul {
   position: relative;
@@ -421,7 +421,7 @@ figcaption {
   top: 112em;
 }
 .footer-menu__lapalettedugout {
-  top: 105.5em;
+  top: 105em;
 }
 .footer-menu__alafrancaise {
   top: 104.5em;
@@ -444,10 +444,6 @@ figcaption {
 .ul-desserts {
   margin-bottom: 3.12em;
 }
-.price {
-padding-left: 17.7em;
-padding-right: 1em;
-}
 .texte-menu {
   padding-top: 0.8em;
   padding-left: 0.8em;
@@ -456,7 +452,7 @@ padding-right: 1em;
 .font-size__texte-menu {
   font-size: 1.23em;
 }
-.div__texte-menu{
+.div__texte-menu {
   display: flex;
 }
 .p-menu {
@@ -486,6 +482,9 @@ padding-right: 1em;
   }
   .btn-menu {
     width: 60%;
+  }
+  .price {
+    padding-left: 27.5em;
   }
   .footer-menu__lapalettedugout {
     top: 110em;
@@ -528,12 +527,8 @@ padding-right: 1em;
   .header-img__size {
     width: 20em;
   }
-  .btn-menu,
-  .btn-menu-check {
+  .btn-menu {
     width: 50%;
-  }
-  .btn-menu-check {
-    transform: translate(45%, 0%);
   }
   .img-restaurants__menu {
     height: 20em;
@@ -551,6 +546,9 @@ padding-right: 1em;
   }
   .menu {
     top: 22em;
+  }
+  .price {
+    padding-left: 11.6em;
   }
   .footer-menu__lanoteenchantee {
     top: 115em;
