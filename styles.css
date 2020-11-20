@@ -124,6 +124,8 @@ h3 {
   padding-top: 0.8em;
   padding-left: 0.8em;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 svg {
   margin-top: 1.5em;
@@ -248,8 +250,16 @@ li:nth-of-type(4) {
 .btn-menu:hover .icon-check {
   animation: icon-rotate 1s;
 }
+.btn-menu:hover .div__texte {
+  width: 250px;
+  white-space: nowrap;
+}
+.div__texte {
+  width: 100%;
+  white-space: nowrap;
+  transition: all 1s;
+}
 .price {
-  padding-left: 12.2em;
   padding-right: 1em;
   transition: all 1s;
   position: absolute;
@@ -418,7 +428,7 @@ figcaption {
   z-index: 3;
 }
 .footer-menu__lanoteenchantee {
-  top: 112em;
+  top: 110em;
 }
 .footer-menu__lapalettedugout {
   top: 105em;
@@ -444,11 +454,6 @@ figcaption {
 .ul-desserts {
   margin-bottom: 3.12em;
 }
-.texte-menu {
-  padding-top: 0.8em;
-  padding-left: 0.8em;
-  width: 301px;
-}
 .font-size__texte-menu {
   font-size: 1.23em;
 }
@@ -458,7 +463,7 @@ figcaption {
 .p-menu {
   margin: 0;
   padding-left: 0.8em;
-  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
