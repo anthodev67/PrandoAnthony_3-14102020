@@ -127,6 +127,10 @@ h3 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.br {
+  width: 239px;
+  white-space: normal;
+}
 svg {
   margin-top: 1.5em;
   margin-left: 2em;
@@ -434,7 +438,7 @@ figcaption {
   top: 105em;
 }
 .footer-menu__alafrancaise {
-  top: 104.5em;
+  top: 104em;
 }
 .heart-menu,
 .heart-full-menu {
@@ -533,7 +537,10 @@ figcaption {
     width: 20em;
   }
   .btn-menu {
-    width: 50%;
+    width: 80%;
+  }
+  .btn-menu:hover .div__texte {
+    width: 100%;
   }
   .img-restaurants__menu {
     height: 20em;
